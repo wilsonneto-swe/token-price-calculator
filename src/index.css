@@ -93,19 +93,21 @@ h1 {
 .sub a:hover { color: var(--primary-active); text-decoration: underline; }
 .sub strong { color: var(--ink); font-weight: 600; }
 
-/* --- Referral ad -------------------------------------------------------- */
+/* --- Referral ad (subtle, with an orange accent) ------------------------ */
 .ad {
   display: flex;
   align-items: center;
   gap: 14px;
   background: var(--surface-card);
-  border: 1px solid var(--hairline);
+  border: 1px solid var(--hairline-strong);
+  border-left: 3px solid var(--primary);
   border-radius: 12px;
-  padding: 14px 20px;
-  margin-bottom: 32px;
+  padding: 16px 20px;
+  margin: 56px 0 32px;
   text-decoration: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
 }
-.ad:hover { border-color: var(--primary); }
+.ad:hover { border-color: var(--primary); background: var(--canvas-soft); }
 
 .ad-tag {
   font-size: 11px;
@@ -127,14 +129,17 @@ h1 {
 .ad-cta {
   margin-left: auto;
   font-size: 14px;
-  font-weight: 500;
-  color: var(--primary);
+  font-weight: 600;
+  color: var(--on-primary);
+  background: var(--primary);
+  border-radius: 8px;
+  padding: 8px 14px;
   white-space: nowrap;
 }
-.ad:hover .ad-cta { color: var(--primary-active); }
+.ad:hover .ad-cta { background: var(--primary-active); }
 
 @media (max-width: 640px) {
-  .ad { flex-wrap: wrap; gap: 8px; }
+  .ad { flex-wrap: wrap; gap: 10px; }
   .ad-cta { margin-left: 0; }
 }
 

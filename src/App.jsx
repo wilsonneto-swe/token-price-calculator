@@ -84,17 +84,6 @@ export default function App() {
         ))}
       </p>
 
-      <a
-        className="ad"
-        href="https://cursor.com/referral?code=E4HRF4YHPNKS"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <span className="ad-tag">{t.adTag}</span>
-        <span className="ad-text">{t.adText}</span>
-        <span className="ad-cta">{t.adCta}</span>
-      </a>
-
       <div className="controls">
         <label>
           {t.inputTokens}
@@ -227,6 +216,17 @@ export default function App() {
           </tbody>
         </table>
       </div>
+
+      <a
+        className="ad"
+        href="https://cursor.com/referral?code=E4HRF4YHPNKS"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span className="ad-tag">{t.adTag}</span>
+        <span className="ad-text">{t.adText}</span>
+        <span className="ad-cta">{t.adCta}</span>
+      </a>
 
       <footer className="page-footer">
         {t.lastUpdated}: {LAST_UPDATED}
